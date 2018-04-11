@@ -1,5 +1,3 @@
-学习flex布局
-
 设置包裹元素(pond )
 justify-content(元素水平间距)
   flex-start flex-end center space-between(紧靠两边) space-around  
@@ -17,7 +15,6 @@ flex-start flex-end center space-between space-around
   可用来调整行间距
 place-content
   水平垂直间距，合并justify-content和align-content，先align后justify，空格间隔，示例： space-around  center 
-
 
 设置元素本身(frog / red)
 order（默认为0，该值可正可负，相对于当前元素前进或后退）
