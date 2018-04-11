@@ -1,0 +1,85 @@
+<html>
+<head>
+  <title>flex布局</title>
+  <style>
+    #pond {
+      display: block;
+    }
+    #background {
+      display: flex;
+    }
+    .frog.green > .bg {
+      background-image: url(frog-green.svg);
+    }
+    .frog.yellow > .bg {
+      background-image: url(frog-yellow.svg);
+    }
+    .frog.red > .bg {
+      background-image: url(frog-red.svg);
+    }
+    .lilypad.green > .bg {
+      background-image: url(lilypad-green.svg);
+    }
+    .lilypad.yellow > .bg {
+      background-image: url(lilypad-yellow.svg);
+    }
+    .lilypad.red > .bg {
+      background-image: url(lilypad-red.svg);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="board">
+    <div id="pond" class="container">
+      <div class="frog red">
+        <div class="bg animated pulse infinite">
+        </div>
+      </div>
+      <div class="frog green">
+        <div class="bg animated pulse infinite">
+        </div>
+      </div>
+      <div class="frog green">
+        <div class="bg animated pulse infinite"></div>
+      </div>
+      <div class="frog green">
+        <div class="bg animated pulse infinite"></div>
+      </div>
+      <div class="frog green">
+        <div class="bg animated pulse infinite"></div>
+      </div>
+      <div class="frog yellow">
+        <div class="bg animated pulse infinite"></div>
+      </div>
+      <div class="frog yellow">
+        <div class="bg animated pulse infinite"></div>
+      </div>
+    </div>
+    <div id="background" class="container">
+      <div class="lilypad red">
+        <div class="bg" style="transform: scale(0.947117) rotate(62.6695deg);"></div>
+      </div>
+      <div class="lilypad green">
+        <div class="bg" style="transform: scale(0.913832) rotate(212.256deg);"></div>
+      </div>
+      <div class="lilypad green">
+        <div class="bg" style="transform: scale(0.930897) rotate(203.767deg);"></div>
+      </div>
+      <div class="lilypad green">
+        <div class="bg" style="transform: scale(0.800784) rotate(303.298deg);"></div>
+      </div>
+      <div class="lilypad green">
+        <div class="bg" style="transform: scale(0.910325) rotate(13.7178deg);"></div>
+      </div>
+      <div class="lilypad yellow">
+        <div class="bg" style="transform: scale(0.860904) rotate(45.9915deg);"></div>
+      </div>
+      <div class="lilypad yellow">
+        <div class="bg" style="transform: scale(0.819943) rotate(78.3307deg);"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
