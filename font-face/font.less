@@ -1,0 +1,54 @@
+/*
+ 自定义文字
+ 资料  https://www.zhangxinxu.com/wordpress/2017/03/css3-font-face-src-local/
+ font-family 自定义改字体的文字 name 最好不要和常用字体重复
+ font-style 指定字体样式 italic 等 在使用该字体时 设置字体样式（或者i标签默认就是斜体） 时会找到对应的字体
+ font-weight 同上  指定对应样式 使用的字体
+ src 顺序指定 先 用户的字体 local为本地字体， 后 url选择线上字体
+ unicode-range  如果有写，那么只有在这里指定的特殊字母时 才使用 该src中指定的字体
+*/
+@font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(../fonts/W__XJnvUD7dzB2KdNodVkI.woff2) format('woff2');
+    unicode-range: U+0E01-0E5B, U+200C-200D, U+25CC;
+  }
+  /* italic */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(../fonts/W__XJnvUD7dzB2KdNodVkI.woff2) format('woff2');
+  }
+  /* bold */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Prompt'), local('Prompt-Regular'), url(../fonts/W__XJnvUD7dzB2KdNodVkI.woff2) format('woff2');
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(../fonts/W__XJnvUD7dzB2Kb9odVkI.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(../fonts/W__XJnvUD7dzB2KbtodVkI.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Prompt';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prompt'), local('Prompt-Regular'), url(../fonts/W__XJnvUD7dzB2KYNod.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
