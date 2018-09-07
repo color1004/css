@@ -1,0 +1,17 @@
+div {
+  width: 200px;
+  height:100px;
+  background: linear-gradient(to bottom right, red , blue);
+  transform-origin: 0 0;
+  /*matrix a b c d e f*/
+  transform: translate(20px, 20px);
+  transform: matrix(1, 0, 0, 1, 20, 20); /*matrix e f*/
+  transform: scale(1.2,1);
+  transform: matrix(1.2, 0, 0, 1, 0, 0); /*matrix a d*/
+  transform: skew(45deg,0);
+  transform: matrix(1, 0, 1, 1, 0, 0); /*matrix b c tan(y) tam(x)*/
+  transform: skewY(45deg);
+  transform: matrix(1, 1, 0, 1, 0, 0); /*matrix a b c d e f*/
+  transform: rotate(30deg);
+  transform: matrix(0.866025, 0.5, -0.5, 0.866025, 0, 0); /*matrix a b c d cos sin -sin cos */
+}
