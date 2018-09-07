@@ -9,6 +9,7 @@ div {
   transform: matrix(1, 0, 0, 1, 20, 20); /*matrix e f*/
   transform: scale(1.2,1);
   transform: matrix(1.2, 0, 0, 1, 0, 0); /*matrix a d*/
+  transform: matrix(-1, 0, 0, 1, 0, 0); /* x轴镜像 */
   transform: skew(45deg,0);
   transform: matrix(1, 0, 1, 1, 0, 0); /*matrix b c tan(y) tam(x)*/
   transform: skewY(45deg);
