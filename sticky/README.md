@@ -1,5 +1,9 @@
 # CSS方案
 
+// todo 待补充
+getBoundingClientRect offsetTop scrollTop 等区别
+https://juejin.cn/post/7019174770918817828
+
 css的实现方案比较简单，如下
 
 ```js
@@ -62,11 +66,8 @@ JS方案是通过监听滚动的元素的滚动事件实现。为了实现滚动
     </div>
 </ReactSingleSticky>
 
-[多个模块堆叠吸顶](http://react-sticky.netlify.app/#/stacked)
-
-
 // StickyContainer 和 getScrollContainer CSS 方案中的 粘性约束矩形
-// ReactSingleSticky满足了所有场景，设置 getScrollContainer 可以实现上述案例，也可以用  StickyContainer + Sticky 代替
+// ReactSingleSticky满足了所有场景，设置 getScrollContainer 可以实现———多个模块堆叠吸顶（如文末链接所示），也可以用  StickyContainer + Sticky 代替，功能待完成
 
 <StickyContainer
     getScrollContainer={() => document.getElementById('b')}>
@@ -74,10 +75,24 @@ JS方案是通过监听滚动的元素的滚动事件实现。为了实现滚动
     <Sticky
         // bottomOffset={30}
         topOffset={30}>
-        <div style={style}>
+        <div>
             {/* ... */}
         </div>
     </Sticky>
     {/* ... */}
 </StickyContainer>
 ```
+
+# 参考文献
+
+[深入理解position sticky粘性定位的计算规则](https://www.zhangxinxu.com/wordpress/2020/03/position-sticky-rules/)
+
+[粘性定位是不是css3新增的](https://www.cnblogs.com/rubylouvre/p/3471490.html)
+
+[讲讲吸顶效果与 react sticky](https://yes-1-am.gitbook.io/blog/react-kai-fa-shi-jian/jiang-jiang-xi-ding-xiao-guo-yu-reactsticky)
+
+[多个模块堆叠吸顶](https://react-sticky.netlify.app/#/stacked)
+
+[offsetTop等对比](https://m.yisu.com/zixun/721137.html)
+
+[react-sticky](https://github.com/captivationsoftware/react-sticky)
